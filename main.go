@@ -162,7 +162,7 @@ func main() {
 	// prepare waitgroup
 	var wg sync.WaitGroup
 
-	// add goro
+	// add group
 	wg.Add(1)
 
 	// main goroutine

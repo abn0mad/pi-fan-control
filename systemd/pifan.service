@@ -3,8 +3,8 @@ Description=Raspberry Pi fan control
 
 [Service]
 Type=simple
-User=admin
-ExecStart=/usr/sbin/pifan -start 66 -stop 60 -timeout 30 -thermal /sys/class/thermal/thermal_zone0/temp -gpio 2
+User=CHANGEME
+ExecStart=/usr/sbin/pi-fan-control -start 66 -stop 60 -timeout 30 -thermal /sys/class/thermal/thermal_zone0/temp -gpio 2
 Restart=always
 KillSignal=SIGQUIT
 
